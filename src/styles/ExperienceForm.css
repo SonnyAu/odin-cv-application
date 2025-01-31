@@ -3,3 +3,8 @@
   flex-direction: column;
   gap: 10px;
 }
+
+textarea {
+  height: 100px;
+  resize: none;
+}
