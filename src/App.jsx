@@ -1,17 +1,27 @@
 import { useState } from "react";
-import PersonalInfo from "./components/PersonalInfo";
+import PersonalInfoForm from "./components/PersonalInfoForm";
+import EducationForm from "./components/EducationForm";
 import "./App.css";
-function submitForm(formData) {
-  console.log(formData.get("firstName"));
-}
+import ExperienceForm from "./components/ExperienceForm";
 
 function App() {
+  const [personalInfo, setPersonalInfo] = useState();
+  const [educationInfo, setEducationInfo] = useState();
+  const [experience, setExperience] = useState([]);
+  console.log(personalInfo);
+  console.log(educationInfo);
+
   return (
     <>
-      <form action={submitForm}>
-        <input type="text" placeholder="First Name" name="firstName"></input>
-        <button type="submit">Submit Info</button>
-      </form>
+      <PersonalInfoForm
+        personalInfo={personalInfo}
+        setPersonalInfo={setPersonalInfo}
+      />
+      <EducationForm
+        educationInfo={educationInfo}
+        setEducationInfo={setEducationInfo}
+      />
+      <ExperienceForm experience={experience} setExperience={setExperience} />
     </>
   );
 }
