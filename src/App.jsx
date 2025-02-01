@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div id="app">
       <section id="main-form">
         <PersonalInfoForm
           personalInfo={personalInfo}
