@@ -23,8 +23,10 @@ export default function Education({ educationInfo, setEducationInfo }) {
         <div className="education-cv">
           <h1>Education</h1>
           <div>{`${school}: ${major}`}</div>
-          <div>Attended: {`${schoolStart} - ${schoolEnd}`}</div>
-          <button onClick={handleClick}>Edit Education</button>
+          <div>Attended: {`${schoolStart} to ${schoolEnd}`}</div>
+          <button onClick={handleClick} className="edit-save-btn">
+            Edit Education
+          </button>
         </div>
       ) : (
         <div className="education-cv">
@@ -50,7 +52,9 @@ export default function Education({ educationInfo, setEducationInfo }) {
             value={schoolEnd}
             onChange={(e) => handleChange(e, "schoolEnd")}
           />
-          <button onClick={handleClick}>Save Education</button>
+          <button onClick={handleClick} className="edit-save-btn">
+            Save Education
+          </button>
         </div>
       )}
     </>

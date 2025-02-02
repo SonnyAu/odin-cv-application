@@ -40,7 +40,9 @@ export default function Experience({ experience, setExperience }) {
               </>
             );
           })}
-          <button onClick={handleClick}>Edit Experience</button>
+          <button className="edit-save-btn" onClick={handleClick}>
+            Edit Experience
+          </button>
         </div>
       ) : (
         <div>
@@ -83,7 +85,9 @@ export default function Experience({ experience, setExperience }) {
             );
           })}
 
-          <button onClick={handleClick}>Save Experience</button>
+          <button onClick={handleClick} className="edit-save-btn">
+            Save Experience
+          </button>
         </div>
       )}
     </>

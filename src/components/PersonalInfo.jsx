@@ -27,7 +27,9 @@ export default function PersonalInfo({ personalInfo, setPersonalInfo }) {
           <p>{firstName + " " + lastName}</p>
           <p>{email}</p>
           <p>{phoneNumber}</p>
-          <button onClick={handleClick}>Edit Personal Info</button>
+          <button onClick={handleClick} className="edit-save-btn">
+            Edit Personal Info
+          </button>
         </div>
       ) : (
         <div>
@@ -55,7 +57,9 @@ export default function PersonalInfo({ personalInfo, setPersonalInfo }) {
             value={phoneNumber}
             onChange={(e) => handleChange(e, "phoneNumber")}
           />
-          <button onClick={handleClick}>Save Personal Info</button>
+          <button onClick={handleClick} className="edit-save-btn">
+            Save Personal Info
+          </button>
         </div>
       )}
     </>
