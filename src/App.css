@@ -65,4 +65,12 @@ main {
   width: 50vh;
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 6px;
+}
+h1 {
+  font-size: 25px;
+}
+
+#generate-btn {
+  border: 1px solid black;
 }

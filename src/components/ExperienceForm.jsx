@@ -17,8 +17,8 @@ export default function ExperienceForm({ experience, setExperience }) {
           placeholder="Made Samsung's frontend"
         ></textarea>
         <div>
-          <input type="date" name="start-date" />
-          <input type="date" name="end-date" />
+          <input type="date" name="startDate" />
+          <input type="date" name="endDate" />
         </div>
 
         <button type="submit">Submit Experience</button>
